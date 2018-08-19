@@ -12,7 +12,7 @@ import sqlite3
 connection = sqlite3.connect("database")
 cursor = connection.cursor()
 #cursor.execute("delete from Liked_messages")
-cursor.execute("DROP TABLE Liked_messages")
+#cursor.execute("DROP TABLE Liked_messages")
 cursor.execute("CREATE TABLE IF NOT EXISTS Liked_messages (ID INT, text TEXT, user TEXT, sendId INT, likes INT,dislikes INT,messages INT,likedBy TEXT,dislikedBy TEXT)")
 
 connection.commit()
