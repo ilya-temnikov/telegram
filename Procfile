@@ -1,1 +1,1 @@
-web: python HashTagCommentsBot.py
+worker: python HashTagCommentsBot.py
